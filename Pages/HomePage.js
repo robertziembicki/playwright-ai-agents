@@ -1,5 +1,5 @@
 // HomePage.js
-const { expect } = require('@playwright/test');
+import { expect } from '@playwright/test';
 
 class HomePage {
     constructor(page) {
@@ -104,4 +104,4 @@ class HomePage {
     // Additional methods can be added here following the same pattern
 }
 
-module.exports = { HomePage };
+export default { HomePage };

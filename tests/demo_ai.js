@@ -1,16 +1,16 @@
 // tests/flightReservation.spec.js
 
-const { test, expect } = require('@playwright/test');
-const { ai } = require('@zerostep/playwright');
-const { HomePage } = require('../Pages/HomePage');
-const { FlightsPage } = require('../Pages/FlightsPage');
-const { PurchasePage } = require('../Pages/PurchasePage');
-const { ConfirmationPage } = require('../Pages/ConfirmationPage');
+import { test, expect } from '@playwright/test';
+import { ai } from '@zerostep/playwright';
+import { HomePage } from '../Pages/HomePage';
+import { FlightsPage } from '../Pages/FlightsPage';
+import { PurchasePage } from '../Pages/PurchasePage';
+import { ConfirmationPage } from '../Pages/ConfirmationPage';
 
 // Import test data
-const flightData = require('../data/flightData.json');
-const passengerInfo = require('../data/passengerInfo.json');
-const paymentInfo = require('../data/paymentInfo.json');
+import flightData from '../data/flightData.json';
+import passengerInfo from '../data/passengerInfo.json';
+import paymentInfo from '../data/paymentInfo.json';
 
 test.describe('BlazeDemo Flight Booking', () => {
   test('Search and Reserve a Flight on BlazeDemo', async ({ page }) => {

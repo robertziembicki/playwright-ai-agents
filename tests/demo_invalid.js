@@ -1,7 +1,7 @@
-const { test, expect } = require('@playwright/test');
-const { HomePage } = require('../Pages/HomePage');
+import { test, expect } from '@playwright/test';
+import { HomePage } from '../Pages/HomePage';
 
-const flightData = require('../data/flightData_invalid.json');
+import flightData from '../data/flightData_invalid.json';
 
 // Test: Attempt booking with invalid data
 // This test checks that invalid cities fail fast and do not proceed further.

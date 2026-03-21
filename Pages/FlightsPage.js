@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 
 class FlightsPage {
     constructor(page) {
@@ -29,5 +29,5 @@ class FlightsPage {
     }
   }
   
-  module.exports = { FlightsPage };
+  export default { FlightsPage };
   
