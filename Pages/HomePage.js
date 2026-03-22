@@ -1,7 +1,7 @@
 // HomePage.js
 import { expect } from '@playwright/test';
 
-class HomePage {
+export class HomePage {
     constructor(page) {
         this.page = page;
 
@@ -103,5 +103,3 @@ class HomePage {
 
     // Additional methods can be added here following the same pattern
 }
-
-export default { HomePage };

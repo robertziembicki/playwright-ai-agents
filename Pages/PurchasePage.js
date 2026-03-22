@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-class PurchasePage {
+export class PurchasePage {
   constructor(page) {
     this.page = page;
   }
@@ -36,5 +36,3 @@ class PurchasePage {
   //  await this.page.screenshot({ path: 'step13_purchase_flight_clicked.png' });
   }
 }
-
-export default { PurchasePage };

@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-class FlightsPage {
+export class FlightsPage {
     constructor(page) {
       this.page = page;
       this.flightTable = this.page.locator('table.table');
@@ -28,6 +28,4 @@ class FlightsPage {
     await this.page.screenshot({ path: 'step8_first_flight_selected.png' });
     }
   }
-  
-  export default { FlightsPage };
   

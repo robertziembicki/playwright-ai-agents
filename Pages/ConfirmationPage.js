@@ -1,7 +1,7 @@
 
 import { expect } from '@playwright/test';  // Import expect from Playwright
 
-class ConfirmationPage {
+export class ConfirmationPage {
   constructor(page) {
     this.page = page;
   }
@@ -29,5 +29,3 @@ class ConfirmationPage {
    await this.page.screenshot({ path: 'step17_payment_details.png' });
   }
 }
-
-export default { ConfirmationPage };
