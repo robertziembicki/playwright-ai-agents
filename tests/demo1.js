@@ -7,9 +7,9 @@ import { PurchasePage } from '../Pages/PurchasePage';
 import { ConfirmationPage } from '../Pages/ConfirmationPage';
 
 // Import test data
-import flightData from '../data/flightData1.json';
-import passengerInfo from '../data/passengerInfo1.json';
-import paymentInfo from '../data/paymentInfo1.json';
+import flightData from '../data/flightData.json';
+import passengerInfo from '../data/passengerInfo.json';
+import paymentInfo from '../data/paymentInfo.json';
 
 test('Search and Reserve a Flight on BlazeDemo', async ({ page }) => {
   const { departureCity, destinationCity } = flightData;
